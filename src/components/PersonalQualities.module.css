@@ -1,0 +1,16 @@
+
+.wrapper {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 100px auto;
+    text-align: center;
+    max-width: 500px;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.twoElem {
+    color: #2c9800;
+}

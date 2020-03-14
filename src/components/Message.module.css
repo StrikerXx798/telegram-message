@@ -1,0 +1,72 @@
+.cloud {
+    border-radius: 10px;
+    height: auto;
+    max-width: 400px;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    color: black;
+    word-wrap: break-word;
+}
+
+.before {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     background-color: white;
+     background-image: url(avatar.png);
+     background-size: 100% 100%;
+     position: absolute;
+     bottom: 0;
+     left: -100px;
+     content: '';
+ }
+
+.after {
+    border: 15px solid transparent;
+    border-bottom-color: white;
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+    content: '';
+}
+.wrapper {
+    padding-left: 150px;
+    margin: 100px auto;
+    max-width: 500px;
+}
+
+.name {
+    color: #ffc438;
+    font-weight: 700;
+    font-family: Roboto, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.message {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+.time {
+    color: #959595;
+    font-weight: 500;
+    font-family: Roboto, Helvetica, sans-serif;
+    text-align: right;
+}
+
+@media all and (max-width: 500px) {
+    .wrapper {
+        padding-left: 75px;
+    }
+
+    .before {
+        width: 50px;
+        height: 50px;
+        left: -70px;
+    }
+
+    .after {
+        border-width: 10px;
+        left: -10px;
+    }
+}

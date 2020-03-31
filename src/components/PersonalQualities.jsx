@@ -1,8 +1,8 @@
 import s from "./PersonalQualities.module.css";
 import React from "react";
 
-const Message = (props) => {
-    let taskElements = props.tasks.map((task, id) =>{
+class PersonalQualities extends React.Component {
+    taskElements = this.props.tasks.map((task, id) =>{
         if(id === 1) {
             return <li key={task.id} className={s.twoElem}>{task.quality}</li>;
         } else {
@@ -10,11 +10,14 @@ const Message = (props) => {
         }
 
     });
-    return (
-        <div className={s.wrapper}>
-            <h2>Мои личные качества</h2>
-            <ul>{taskElements}</ul>
-        </div>
-    )
+
+    render = () => {
+        return (
+            <div className={s.wrapper}>
+                <h2>Мои личные качества</h2>
+                <ul>{this.taskElements}</ul>
+            </div>
+        )
+    }
 }
-export default Message;
+export default PersonalQualities;
